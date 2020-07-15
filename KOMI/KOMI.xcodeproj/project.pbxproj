@@ -56,9 +56,12 @@
 		F4B153D224BEFF230074600A /* KOMI */ = {
 			isa = PBXGroup;
 			children = (
+				F4B153EA24BF00BE0074600A /* Resources */,
+				F4B153E924BF00B10074600A /* Supporting Views */,
+				F4B153E824BF00AB0074600A /* Models */,
+				F4B153E724BF00A40074600A /* Views */,
 				F4B153D324BEFF230074600A /* AppDelegate.swift */,
 				F4B153D524BEFF230074600A /* SceneDelegate.swift */,
-				F4B153D724BEFF230074600A /* ContentView.swift */,
 				F4B153D924BEFF270074600A /* Assets.xcassets */,
 				F4B153DE24BEFF270074600A /* LaunchScreen.storyboard */,
 				F4B153E124BEFF270074600A /* Info.plist */,
@@ -73,6 +76,35 @@
 				F4B153DC24BEFF270074600A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4B153E724BF00A40074600A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4B153D724BEFF230074600A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4B153E824BF00AB0074600A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4B153E924BF00B10074600A /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		F4B153EA24BF00BE0074600A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

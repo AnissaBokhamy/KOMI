@@ -29,6 +29,7 @@ struct InfoLogo: View {
                     .padding(.bottom, -5)
                 Text(infoText)
                     .font(.system(size: 8))
+                    .allowsTightening(true)
                     .foregroundColor(.white)
             }
         }

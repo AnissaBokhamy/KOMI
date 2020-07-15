@@ -12,9 +12,11 @@ public class InventoryItem: Food {
     
     var amount: Amount?
     var bestBeforeDate: Date
+    var daysBeforeRotten: Int
     
     override init(name: String){
         self.bestBeforeDate = Date()
+        self.daysBeforeRotten = Calendar.current.dateComponents([.day], from: Date(), to: self.bestBeforeDate).day!
         super.init(name: name)
     }
 }

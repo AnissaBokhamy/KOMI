@@ -24,7 +24,7 @@ struct InventoryImage: View {
                 HStack(alignment: .center) {
                     Spacer()
                     
-                    InfoLogo(logo: Image("timer"), infoText: "2 days")
+                    InfoLogo(logo: Image("timer"), infoText: "\(inventoryItem.daysBeforeRotten) days")
                 }
                 Spacer()
                 ZStack(alignment: .leading) {

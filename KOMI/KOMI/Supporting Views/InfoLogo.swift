@@ -29,7 +29,7 @@ struct InfoLogo: View {
                     .padding(.bottom, -5)
                 Text(infoText)
                     .font(.system(size: 8))
-                    .foregroundColor(Color("Beige"))
+                    .foregroundColor(.white)
             }
         }
     }
@@ -37,6 +37,6 @@ struct InfoLogo: View {
 
 struct InfoLogo_Previews: PreviewProvider {
     static var previews: some View {
-        InfoLogo(logo: Image("apple"), infoText: "2 days")
+        InfoLogo(logo: Image("timer"), infoText: "2 days")
     }
 }

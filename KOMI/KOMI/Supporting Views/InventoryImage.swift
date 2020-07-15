@@ -24,7 +24,7 @@ struct InventoryImage: View {
                 HStack(alignment: .center) {
                     Spacer()
                     
-                    InfoLogo(logo: Image("apple"), infoText: "2 days")
+                    InfoLogo(logo: Image("timer"), infoText: "2 days")
                 }
                 Spacer()
                 ZStack(alignment: .leading) {

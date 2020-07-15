@@ -21,6 +21,8 @@
 		F4B153F624BF1A5A0074600A /* InventoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153F524BF1A5A0074600A /* InventoryImage.swift */; };
 		F4B153F824BF1D620074600A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153F724BF1D620074600A /* Images.xcassets */; };
 		F4B153FA24BF1F610074600A /* InfoLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153F924BF1F610074600A /* InfoLogo.swift */; };
+		F4B153FC24BF79CA0074600A /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153FB24BF79CA0074600A /* AppIcons.xcassets */; };
+		F4B1542024BF7A230074600A /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = F4B1541F24BF7A230074600A /* Icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F4B153F524BF1A5A0074600A /* InventoryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryImage.swift; sourceTree = "<group>"; };
 		F4B153F724BF1D620074600A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4B153F924BF1F610074600A /* InfoLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoLogo.swift; sourceTree = "<group>"; };
+		F4B153FB24BF79CA0074600A /* AppIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcons.xcassets; sourceTree = "<group>"; };
+		F4B1541F24BF7A230074600A /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +129,10 @@
 		F4B153EA24BF00BE0074600A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F4B1541F24BF7A230074600A /* Icons */,
 				F4B153ED24BF0BAD0074600A /* apple.jpeg */,
 				F4B153F724BF1D620074600A /* Images.xcassets */,
+				F4B153FB24BF79CA0074600A /* AppIcons.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -190,9 +196,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B153E024BEFF270074600A /* LaunchScreen.storyboard in Resources */,
+				F4B1542024BF7A230074600A /* Icons in Resources */,
 				F4B153EC24BF05FA0074600A /* Colors.xcassets in Resources */,
 				F4B153DD24BEFF270074600A /* Preview Assets.xcassets in Resources */,
 				F4B153F824BF1D620074600A /* Images.xcassets in Resources */,
+				F4B153FC24BF79CA0074600A /* AppIcons.xcassets in Resources */,
 				F4B153EE24BF0BAD0074600A /* apple.jpeg in Resources */,
 				F4B153DA24BEFF270074600A /* Assets.xcassets in Resources */,
 			);

@@ -21,18 +21,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         
-        let foodInventoryNames = ["Apples", "Lasagna", "Apple pie"]
-        var inventory = [InventoryItem]()
-        foodInventoryNames.forEach { foodName in
-            inventory.append(InventoryItem(name: foodName))
-        }
         
-        let homeView = HomeView(toEatInInventory: inventory)
+        
+        
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: homeView)
+            window.rootViewController = UIHostingController(rootView: MainView())
             self.window = window
             window.makeKeyAndVisible()
         }

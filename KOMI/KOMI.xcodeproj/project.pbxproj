@@ -23,6 +23,7 @@
 		F4B153FA24BF1F610074600A /* InfoLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153F924BF1F610074600A /* InfoLogo.swift */; };
 		F4B153FC24BF79CA0074600A /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153FB24BF79CA0074600A /* AppIcons.xcassets */; };
 		F4B1542024BF7A230074600A /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = F4B1541F24BF7A230074600A /* Icons */; };
+		F4B1542224BFAC590074600A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1542124BFAC590074600A /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F4B153F924BF1F610074600A /* InfoLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoLogo.swift; sourceTree = "<group>"; };
 		F4B153FB24BF79CA0074600A /* AppIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcons.xcassets; sourceTree = "<group>"; };
 		F4B1541F24BF7A230074600A /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
+		F4B1542124BFAC590074600A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				F4B153D724BEFF230074600A /* HomeView.swift */,
+				F4B1542124BFAC590074600A /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B153D424BEFF230074600A /* AppDelegate.swift in Sources */,
+				F4B1542224BFAC590074600A /* MainView.swift in Sources */,
 				F4B153D624BEFF230074600A /* SceneDelegate.swift in Sources */,
 				F4B153F624BF1A5A0074600A /* InventoryImage.swift in Sources */,
 				F4B153F224BF0D8A0074600A /* Food.swift in Sources */,

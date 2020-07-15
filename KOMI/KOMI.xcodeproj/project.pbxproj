@@ -13,6 +13,7 @@
 		F4B153DA24BEFF270074600A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153D924BEFF270074600A /* Assets.xcassets */; };
 		F4B153DD24BEFF270074600A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153DC24BEFF270074600A /* Preview Assets.xcassets */; };
 		F4B153E024BEFF270074600A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B153DE24BEFF270074600A /* LaunchScreen.storyboard */; };
+		F4B153EC24BF05FA0074600A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153EB24BF05FA0074600A /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F4B153DC24BEFF270074600A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4B153DF24BEFF270074600A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4B153E124BEFF270074600A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B153EB24BF05FA0074600A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F4B153D324BEFF230074600A /* AppDelegate.swift */,
 				F4B153D524BEFF230074600A /* SceneDelegate.swift */,
 				F4B153D924BEFF270074600A /* Assets.xcassets */,
+				F4B153EB24BF05FA0074600A /* Colors.xcassets */,
 				F4B153DE24BEFF270074600A /* LaunchScreen.storyboard */,
 				F4B153E124BEFF270074600A /* Info.plist */,
 				F4B153DB24BEFF270074600A /* Preview Content */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B153E024BEFF270074600A /* LaunchScreen.storyboard in Resources */,
+				F4B153EC24BF05FA0074600A /* Colors.xcassets in Resources */,
 				F4B153DD24BEFF270074600A /* Preview Assets.xcassets in Resources */,
 				F4B153DA24BEFF270074600A /* Assets.xcassets in Resources */,
 			);

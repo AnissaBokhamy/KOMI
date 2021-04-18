@@ -3,20 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8629F675220D110068EB3A4 /* Pods_KOMI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0714900032087B67B4F6E5F5 /* Pods_KOMI.framework */; };
+		F43861392623468F00078461 /* InventoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43861382623468F00078461 /* InventoryManager.swift */; };
+		F4462C8124D85E4200C10028 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4462C8024D85E4200C10028 /* SignUpView.swift */; };
+		F4532AED24CE2C42008B48AC /* NavigationTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4532AEC24CE2C42008B48AC /* NavigationTabView.swift */; };
+		F45FE0A724C050FC0090D010 /* FirebaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FE0A624C050FC0090D010 /* FirebaseDataManager.swift */; };
+		F45FE0AB24C054F90090D010 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FE0AA24C054F90090D010 /* User.swift */; };
 		F4B153D424BEFF230074600A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153D324BEFF230074600A /* AppDelegate.swift */; };
 		F4B153D624BEFF230074600A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153D524BEFF230074600A /* SceneDelegate.swift */; };
-		F4B153D824BEFF230074600A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153D724BEFF230074600A /* HomeView.swift */; };
+		F4B153D824BEFF230074600A /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153D724BEFF230074600A /* SummaryView.swift */; };
 		F4B153DA24BEFF270074600A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153D924BEFF270074600A /* Assets.xcassets */; };
 		F4B153DD24BEFF270074600A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153DC24BEFF270074600A /* Preview Assets.xcassets */; };
 		F4B153E024BEFF270074600A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B153DE24BEFF270074600A /* LaunchScreen.storyboard */; };
 		F4B153EC24BF05FA0074600A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153EB24BF05FA0074600A /* Colors.xcassets */; };
 		F4B153EE24BF0BAD0074600A /* apple.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F4B153ED24BF0BAD0074600A /* apple.jpeg */; };
 		F4B153F024BF0D700074600A /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153EF24BF0D700074600A /* InventoryItem.swift */; };
-		F4B153F224BF0D8A0074600A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153F124BF0D8A0074600A /* Food.swift */; };
+		F4B153F224BF0D8A0074600A /* FoodElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153F124BF0D8A0074600A /* FoodElement.swift */; };
 		F4B153F424BF0E500074600A /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153F324BF0E500074600A /* Amount.swift */; };
 		F4B153F624BF1A5A0074600A /* InventoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B153F524BF1A5A0074600A /* InventoryImage.swift */; };
 		F4B153F824BF1D620074600A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153F724BF1D620074600A /* Images.xcassets */; };
@@ -24,13 +30,25 @@
 		F4B153FC24BF79CA0074600A /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B153FB24BF79CA0074600A /* AppIcons.xcassets */; };
 		F4B1542024BF7A230074600A /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = F4B1541F24BF7A230074600A /* Icons */; };
 		F4B1542224BFAC590074600A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1542124BFAC590074600A /* MainView.swift */; };
+		F4B1542424C042430074600A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B1542324C042430074600A /* GoogleService-Info.plist */; };
+		F4B93FA924CDEBE2005C9296 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B93FA824CDEBE2005C9296 /* LoginView.swift */; };
+		F4B9D87F24CE0E900027491B /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B9D87E24CE0E8F0027491B /* SessionStore.swift */; };
+		F4EB2E03262230F300F6F0E0 /* PreferenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB2E02262230F300F6F0E0 /* PreferenceStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0714900032087B67B4F6E5F5 /* Pods_KOMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KOMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C27DEA4689E8F26CF90E06 /* Pods-KOMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KOMI.release.xcconfig"; path = "Target Support Files/Pods-KOMI/Pods-KOMI.release.xcconfig"; sourceTree = "<group>"; };
+		C91702C1DA352858746D0ADA /* Pods-KOMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KOMI.debug.xcconfig"; path = "Target Support Files/Pods-KOMI/Pods-KOMI.debug.xcconfig"; sourceTree = "<group>"; };
+		F43861382623468F00078461 /* InventoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryManager.swift; sourceTree = "<group>"; };
+		F4462C8024D85E4200C10028 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F4532AEC24CE2C42008B48AC /* NavigationTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabView.swift; sourceTree = "<group>"; };
+		F45FE0A624C050FC0090D010 /* FirebaseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataManager.swift; sourceTree = "<group>"; };
+		F45FE0AA24C054F90090D010 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F4B153D024BEFF230074600A /* KOMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B153D324BEFF230074600A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B153D524BEFF230074600A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4B153D724BEFF230074600A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F4B153D724BEFF230074600A /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		F4B153D924BEFF270074600A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4B153DC24BEFF270074600A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4B153DF24BEFF270074600A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,7 +56,7 @@
 		F4B153EB24BF05FA0074600A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F4B153ED24BF0BAD0074600A /* apple.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpeg; sourceTree = "<group>"; };
 		F4B153EF24BF0D700074600A /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
-		F4B153F124BF0D8A0074600A /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		F4B153F124BF0D8A0074600A /* FoodElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodElement.swift; sourceTree = "<group>"; };
 		F4B153F324BF0E500074600A /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		F4B153F524BF1A5A0074600A /* InventoryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryImage.swift; sourceTree = "<group>"; };
 		F4B153F724BF1D620074600A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -46,6 +64,10 @@
 		F4B153FB24BF79CA0074600A /* AppIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcons.xcassets; sourceTree = "<group>"; };
 		F4B1541F24BF7A230074600A /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
 		F4B1542124BFAC590074600A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F4B1542324C042430074600A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4B93FA824CDEBE2005C9296 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F4B9D87E24CE0E8F0027491B /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		F4EB2E02262230F300F6F0E0 /* PreferenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +75,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8629F675220D110068EB3A4 /* Pods_KOMI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A18DD6E24BD677ACCAC7C02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C91702C1DA352858746D0ADA /* Pods-KOMI.debug.xcconfig */,
+				40C27DEA4689E8F26CF90E06 /* Pods-KOMI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		29849FA478F667ACDCBCB7DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0714900032087B67B4F6E5F5 /* Pods_KOMI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F438613B2623472600078461 /* DatabaseManagers */ = {
+			isa = PBXGroup;
+			children = (
+				F45FE0A624C050FC0090D010 /* FirebaseDataManager.swift */,
+				F43861382623468F00078461 /* InventoryManager.swift */,
+			);
+			path = DatabaseManagers;
+			sourceTree = "<group>";
+		};
 		F4B153C724BEFF220074600A = {
 			isa = PBXGroup;
 			children = (
 				F4B153D224BEFF230074600A /* KOMI */,
 				F4B153D124BEFF230074600A /* Products */,
+				0A18DD6E24BD677ACCAC7C02 /* Pods */,
+				29849FA478F667ACDCBCB7DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +131,7 @@
 			children = (
 				F4B153EA24BF00BE0074600A /* Resources */,
 				F4B153E924BF00B10074600A /* Supporting Views */,
+				F438613B2623472600078461 /* DatabaseManagers */,
 				F4B153E824BF00AB0074600A /* Models */,
 				F4B153E724BF00A40074600A /* Views */,
 				F4B153D324BEFF230074600A /* AppDelegate.swift */,
@@ -88,6 +140,7 @@
 				F4B153EB24BF05FA0074600A /* Colors.xcassets */,
 				F4B153DE24BEFF270074600A /* LaunchScreen.storyboard */,
 				F4B153E124BEFF270074600A /* Info.plist */,
+				F4B1542324C042430074600A /* GoogleService-Info.plist */,
 				F4B153DB24BEFF270074600A /* Preview Content */,
 			);
 			path = KOMI;
@@ -104,8 +157,11 @@
 		F4B153E724BF00A40074600A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F4B153D724BEFF230074600A /* HomeView.swift */,
+				F4B153D724BEFF230074600A /* SummaryView.swift */,
 				F4B1542124BFAC590074600A /* MainView.swift */,
+				F4532AEC24CE2C42008B48AC /* NavigationTabView.swift */,
+				F4B93FA824CDEBE2005C9296 /* LoginView.swift */,
+				F4462C8024D85E4200C10028 /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,8 +170,11 @@
 			isa = PBXGroup;
 			children = (
 				F4B153EF24BF0D700074600A /* InventoryItem.swift */,
-				F4B153F124BF0D8A0074600A /* Food.swift */,
+				F4B153F124BF0D8A0074600A /* FoodElement.swift */,
 				F4B153F324BF0E500074600A /* Amount.swift */,
+				F45FE0AA24C054F90090D010 /* User.swift */,
+				F4B9D87E24CE0E8F0027491B /* SessionStore.swift */,
+				F4EB2E02262230F300F6F0E0 /* PreferenceStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4B153E424BEFF270074600A /* Build configuration list for PBXNativeTarget "KOMI" */;
 			buildPhases = (
+				279D406147C01B1FC9CD8739 /* [CP] Check Pods Manifest.lock */,
 				F4B153CC24BEFF230074600A /* Sources */,
 				F4B153CD24BEFF230074600A /* Frameworks */,
 				F4B153CE24BEFF230074600A /* Resources */,
+				7572420E25331BD5509726BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +261,7 @@
 			files = (
 				F4B153E024BEFF270074600A /* LaunchScreen.storyboard in Resources */,
 				F4B1542024BF7A230074600A /* Icons in Resources */,
+				F4B1542424C042430074600A /* GoogleService-Info.plist in Resources */,
 				F4B153EC24BF05FA0074600A /* Colors.xcassets in Resources */,
 				F4B153DD24BEFF270074600A /* Preview Assets.xcassets in Resources */,
 				F4B153F824BF1D620074600A /* Images.xcassets in Resources */,
@@ -211,19 +273,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		279D406147C01B1FC9CD8739 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KOMI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7572420E25331BD5509726BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KOMI/Pods-KOMI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KOMI/Pods-KOMI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KOMI/Pods-KOMI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4B153CC24BEFF230074600A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F4B153D424BEFF230074600A /* AppDelegate.swift in Sources */,
+				F43861392623468F00078461 /* InventoryManager.swift in Sources */,
+				F45FE0A724C050FC0090D010 /* FirebaseDataManager.swift in Sources */,
 				F4B1542224BFAC590074600A /* MainView.swift in Sources */,
+				F4532AED24CE2C42008B48AC /* NavigationTabView.swift in Sources */,
 				F4B153D624BEFF230074600A /* SceneDelegate.swift in Sources */,
 				F4B153F624BF1A5A0074600A /* InventoryImage.swift in Sources */,
-				F4B153F224BF0D8A0074600A /* Food.swift in Sources */,
-				F4B153D824BEFF230074600A /* HomeView.swift in Sources */,
+				F4B153F224BF0D8A0074600A /* FoodElement.swift in Sources */,
+				F4B153D824BEFF230074600A /* SummaryView.swift in Sources */,
+				F4B9D87F24CE0E900027491B /* SessionStore.swift in Sources */,
+				F45FE0AB24C054F90090D010 /* User.swift in Sources */,
 				F4B153F024BF0D700074600A /* InventoryItem.swift in Sources */,
+				F4B93FA924CDEBE2005C9296 /* LoginView.swift in Sources */,
+				F4EB2E03262230F300F6F0E0 /* PreferenceStore.swift in Sources */,
 				F4B153FA24BF1F610074600A /* InfoLogo.swift in Sources */,
+				F4462C8124D85E4200C10028 /* SignUpView.swift in Sources */,
 				F4B153F424BF0E500074600A /* Amount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +470,7 @@
 		};
 		F4B153E524BEFF270074600A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91702C1DA352858746D0ADA /* Pods-KOMI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +491,7 @@
 		};
 		F4B153E624BEFF270074600A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40C27DEA4689E8F26CF90E06 /* Pods-KOMI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

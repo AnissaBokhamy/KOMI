@@ -8,8 +8,14 @@
 
 import Foundation
 
-public struct Amount {
+public struct Amount: Codable {
     var amountNumber: Double
     var unitName: String
     var unitAbbreviation: String
+    
+    init(number: Double) {
+        amountNumber = number
+        unitName = ""
+        unitAbbreviation = ""
+    }
 }

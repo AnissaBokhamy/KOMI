@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  SummaryView.swift
 //  KOMI
 //
 //  Created by Anissa Bokhamy on 15/07/2020.
@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-struct HomeView: View {
-    
+struct SummaryView: View {
+
     var toEatInInventory: [InventoryItem]
     
     var body: some View {
@@ -22,23 +22,23 @@ struct HomeView: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 10) {
-                    ForEach(self.toEatInInventory) { foodItem in
-                    InventoryImage(inventoryItem: foodItem)
-                    }
+                    ForEach(toEatInInventory, content: { foodItem in
+                        InventoryImage(inventoryItem: foodItem)
+                    })
                 }
             }
         }
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct SummaryView_Previews: PreviewProvider {
     static var previews: some View {
         let foodInventoryNames = ["Apples", "Lasagna", "Apple pie"]
         var inventory = [InventoryItem]()
         foodInventoryNames.forEach { foodName in
-            inventory.append(InventoryItem(name: foodName))
+            inventory.append(InventoryItem(foodName: foodName))
         }
         
-        return HomeView(toEatInInventory: inventory)
+        return SummaryView(toEatInInventory: inventory)
     }
 }

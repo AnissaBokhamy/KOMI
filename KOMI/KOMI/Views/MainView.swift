@@ -10,22 +10,22 @@ import SwiftUI
 
 struct MainView: View {
     
-    let inventory = [InventoryItem(name: "Apples"), InventoryItem(name: "Lasagna"), InventoryItem(name: "Apple pie")]
+    @EnvironmentObject var session: SessionStore
+    //@EnvironmentObject var dataManager: FirestoreDataManager
+    //@EnvironmentObject var foodDatabase: [FoodElement]
     
-    init() {
-        UITabBar.appearance().isTranslucent = false
-        UITabBar.appearance().barTintColor = UIColor(named: "Dark Green")
+    func getUser() {
+        session.listen()
     }
     
     var body: some View {
-        TabView {
-            HomeView(toEatInInventory: self.inventory)
-                .tabItem {
-                    Image("summary")
-                    Text("Home")
-                }
-        }
-        .accentColor(.white)
+        Group {
+            if (session.user != nil) {
+                NavigationTabView()
+            } else {
+                LoginView()
+            }
+        }.onAppear(perform: getUser)
     }
 }
 

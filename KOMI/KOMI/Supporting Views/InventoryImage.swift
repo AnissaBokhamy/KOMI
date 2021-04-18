@@ -7,19 +7,22 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct InventoryImage: View {
     
     var inventoryItem: InventoryItem
-    
+
     var body: some View {
         ZStack {
-            Image(inventoryItem.imageName!)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 150, height: 150)
-                .clipped()
-                .cornerRadius(20)
+            if let imageUrl = FirebaseDataManager.getImage(named: inventoryItem.imageName ?? "") {
+                WebImage(url: imageUrl)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 150, height: 150)
+                    .clipped()
+                    .cornerRadius(20)
+            }
             VStack(alignment: .leading) {
                 HStack(alignment: .center) {
                     Spacer()
@@ -32,7 +35,7 @@ struct InventoryImage: View {
                         .frame(width: 150, height: 50)
                         .foregroundColor(.clear)
                         .background(LinearGradient(gradient: .init(colors: [Color("Dark Grey"), .clear]), startPoint: .init(x: 0, y: 1), endPoint: .init(x: 0, y: 0)))
-                    Text(inventoryItem.name)
+                    Text(inventoryItem.referencedFoodElement?.name ?? "NO NAME")
                         .font(.headline)
                         .foregroundColor(Color("Beige"))
                         .padding(.leading, 15)
@@ -52,7 +55,7 @@ struct InventoryImage: View {
 
 struct InventoryImage_Previews: PreviewProvider {
     static var previews: some View {
-        var inventoryItem = InventoryItem(name: "Apples")
+        var inventoryItem = InventoryItem(foodName: "Apples")
         inventoryItem.imageName = "apple"
         
         return InventoryImage(inventoryItem:
